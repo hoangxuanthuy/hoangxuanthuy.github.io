@@ -1,0 +1,7 @@
+from scipy.stats import t
+
+alpha=0.05
+degrees_of_freedom=43
+t_critical=t.ppf(1-alpha,degrees_of_freedom)
+
+print(f"t-Critical Value: {t_critical}")

@@ -4,38 +4,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
   <title>Chuyên Môn</title>
 </head>
 
 <body>
-  <header>
-    <h1>Chuyên Môn</h1>
+  <header style="font-family: 'Roboto', sans-serif;">
+    <h1 style="color:blue;font-size: 50px; text-align: center;">Chuyên Môn</h1>
   </header>
   <nav>
   </nav>
-  <section>
-    <h2>Chuyên Ngành: <strong>Information System</strong></h2>
-    <p>VD code Python:</p>
-    <pre>
+  <main style="font-family: 'Roboto', sans-serif;">
+    <section>
+      <h2>Chuyên Ngành: <strong>Information System</strong></h2>
+      <div style="position: relative; display: flex; font-size: large; padding: 20px;">
+        <img src="anhcode.jpeg" usemap="#anhcode_map" style="width: 300px; height:300px">
+        <map name="anhcode_map">
+          <area target=" alt" alt="code_python" title="code_python"
+            href="https://www.careerlink.vn/cam-nang-viec-lam/dinh-huong-nghe-nghiep/he-thong-thong-tin-la-gi-hoc-nganh-nay-ra-truong-lam-gi" coords="3,3,696,361" shape="rect">
+        </map>
+        <div style="padding-left: 30px">
+          <p>VD code Python:</p>
+          <pre>
       def hello_world():
         print("Hello, World!")
     </pre>
-    <div>
-    <h2> Các Môn Chuyên Ngành: </h2>
-    <li>Quản lý Dự án Công nghệ Thông tin</li>
-    <li>Phân tích Dữ liệu</li>
-    <li>Quản lý Hệ thống Thông tin</li>
-    <li>Công nghệ Blockchain</li>
-    </div>
-    <em>
-      <p>Chuyên báo</p>
-    </em>
-  </section>
-  <footer>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2> Các Môn Chuyên Ngành: </h2>
+        <li>Quản lý Dự án Công nghệ Thông tin</li>
+        <li>Phân tích Dữ liệu</li>
+        <li>Quản lý Hệ thống Thông tin</li>
+        <li>Công nghệ Blockchain</li>
+      </div>
+    </section>
+    <section>
+      <h2><strong>Ngoại Giao</strong></h2>
+      <div style="position: relative; display: flex; font-size: large; padding: 20px;">
+        <img src="ngoaigiao.jpg" usemap="#ngoaigiao_map" style="width: 300px; height:300px">
+        <div style="padding-left: 30px">
+          <ul>
+            <li>Giao tiếp tốt, bắt nhịp tốt</li>
+            <li>Tạo các mối quan hệ lành mạnh, tốt đẹp</li>
+        </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer style="font-family: 'Roboto', sans-serif;">
     <p>© 2024 Trang Web HXT. Bảo lưu mọi quyền.</p>
   </footer>
-
-
+  <br>
+  <button onclick="location.href='index.html'" style="font-family: 'Protest Strike', sans-serif;">Quay lại trang
+    chủ</button>
 </body>
 
 </html>
