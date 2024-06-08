@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký khóa học</title>
+    <style>
+        /* CSS styling */
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="tel"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+        h2 {
+            text-align: center; /* Căn giữa nội dung của phần tử h2 */
+        }
+    </style>
+</head>
+<body>
+
+<h2>Form Đăng ký khóa học</h2>
+<form action="#" method="post">
+    <fieldset>
+        <legend>Thông tin cơ bản của học viên</legend>
+        <label for="fullname">Họ và tên học viên:</label>
+        <input type="text" id="fullname" name="fullname" required minlength="3">
+        
+        <label for="dob">Ngày sinh:</label>
+        <input type="date" id="dob" name="dob" required>
+        
+        <label for="phone">Số điện thoại học viên:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+        
+        <label for="email">Địa chỉ email:</label>
+        <input type="email" id="email" name="email" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Thông tin khóa học đăng ký</legend>
+        <label for="course">Tên khóa học:</label>
+        <select id="course" name="course" required>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+        </select>
+        
+        <label for="time">Thời gian học:</label>
+        <select id="time" name="time" required>
+            <option value="Sáng">Sáng</option>
+            <option value="Chiều">Chiều</option>
+            <option value="Tối">Tối</option>
+        </select>
+        
+        <label for="method">Hình thức học:</label>
+        <select id="method" name="method" required>
+            <option value="Trực tuyến">Trực tuyến</option>
+            <option value="Trực tiếp tại trung tâm">Trực tiếp tại trung tâm</option>
+        </select>
+        
+        <label for="start_date">Ngày bắt đầu:</label>
+        <input type="date" id="start_date" name="start_date" required>
+        
+        <label for="note">Ghi chú thêm:</label>
+        <textarea id="note" name="note"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>Đánh giá và phản hồi</legend>
+        <label for="rating">Đánh giá sơ bộ khóa học:</label>
+        <input type="number" id="rating" name="rating" min="1" max="5">
+        
+        <label for="feedback">Ý kiến, đóng góp:</label>
+        <textarea id="feedback" name="feedback"></textarea>
+    </fieldset>
+
+    <input type="submit" value="Gửi">
+    <input type="reset" value="Xóa">
+</form>
+
+</body>
